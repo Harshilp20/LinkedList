@@ -1,14 +1,15 @@
 //
 //Name: Harshil Patel
-//Course: Data Structures CS2028C - 002
-//Lab Assignment 3
 //
+//Create a Doubly Linked List template, create linked list for students
+//Present User with command menu options
+//Use ASCII art for display options
 
 #include <iostream>
 #include <string>
 using namespace std;
 
-//Student cart
+//Student class
 class Student{
 private:
     string firstName;
@@ -88,6 +89,7 @@ public:
 //Node Class
 class Node{
 public:
+    //Use Student type, this class can be changed into a template to use for any type.
     Student* data;
     Node* next;
     Node* prev;
@@ -100,7 +102,7 @@ public:
     }
 };
 
-//Linked List Class Template
+//Doubly Linked List Class Template
 template <class T>
 class LinkedList{
 private:
